@@ -1,0 +1,93 @@
+﻿l_spanish:
+
+ NUI_RL_realm_ledger_interaction:0 "Abrir o livro mestre do senhorio"
+ NUI_RL_realm_ledger_interaction_desc:0 "Abra o livro mestre do senhorio de #high [recipient.GetShortUINameNoTooltip]#!"
+
+ NUI_RL_realm_ledger_hud_button_TEXT:0 "Livro mestre do senhorio"
+ NUI_RL_realm_ledger_hud_button_TT:0 "$NUI_RL_realm_ledger_interaction$"
+
+ NUI_RL_is_independent_ruler_TEXT:0 "Senhorio de [Character.GetFirstNameNicknamedNoTooltipRegnal]"
+ NUI_RL_is_vassal_TEXT:0 "Senhorio de [Character.GetFirstNameNicknamedNoTooltipRegnal], Vassalo em [Character.GetLiege.GetPrimaryTitle.GetBaseName]"
+ NUI_RL_vassals_TEXT:0 "$game_concept_vassals$"
+
+ NUI_RL_overview_tab_TEXT:0 "Visão geral"
+
+ ### 共通 / Common ###
+ NUI_RL_filter_reset_TEXT:0 "Reiniciar" 
+ NUI_RL_filter_TT:0 "#I Mostrar apenas personagens que atendam a esta condição#!"
+ NUI_RL_filter_reset_TT:0 "#I Reiniciar todas as condições#!"
+
+ NUI_RL_military_strength_TT:0 "Força militar"
+ NUI_RL_show_dynasty_TEXT:0 "$game_concept_dynasty$"
+
+ NUI_RL_filter_group_opinion_TEXT:0 "$game_concept_opinion$"
+ NUI_RL_filter_high_opinion_TEXT:0 "Alta $game_concept_opinion$"
+ NUI_RL_filter_low_opinion_TEXT:0 "Baixa $game_concept_opinion$"
+ NUI_RL_filter_opinion_for_player_TEXT:0 "para você"
+
+ NUI_RL_filter_group_faith_TEXT:0 "$game_concept_faith$"
+ NUI_RL_filter_same_faith_TEXT:0 "Mesma"
+ NUI_RL_filter_diff_faith_TEXT:0 "Diferente"
+
+ ### 封臣一覧 / Vassal List ###
+ NUI_RL_vassal_list_tab_TEXT:0 "$game_concept_vassals$"
+ NUI_RL_realm_size_TEXT:0 "[realm_size]: [Character.RealmSize]"
+ NUI_RL_vassal_realm_size_TEXT:0 "Senhorio vassalo: [GetGlobalVariable( 'NUI_RL_vassal_realm_size' ).GetValue]/[Subtract_int32( Character.RealmSize, Character.GetDomainSize )]"
+ NUI_RL_num_of_vassals:0 "[vassals]: [GetGlobalVariable( 'NUI_RL_meets_conditions' ).GetValue|0]/[GetGlobalVariable( 'NUI_RL_num_of_characters' ).GetValue|0]"
+
+ NUI_RL_show_realm_percentage_TEXT:0 "Porcentagem do senhorio"
+
+ # フィルター / Filters
+ NUI_RL_filter_powerful_vassal_TEXT:0 "$game_concept_powerful_vassal$"
+ NUI_RL_filter_councillor_TEXT:0 "$game_concept_councillor$"
+
+ NUI_RL_filter_group_rightful_vassal_TEXT:0 "Vassalo legítimo"
+ NUI_RL_filter_is_rightful_TEXT:0 "Legítimo"
+ NUI_RL_filter_not_rightful_TEXT:0 "Não legítimo"
+
+ NUI_RL_filter_group_culture_TEXT:0 "$game_concept_culture$"
+ NUI_RL_filter_same_culture_TEXT:0 "$NUI_RL_filter_same_faith_TEXT$"
+ NUI_RL_filter_diff_culture_TEXT:0 "$NUI_RL_filter_diff_faith_TEXT$"
+
+ ### 騎士一覧 / Knight List ###
+ NUI_RL_knight_list_tab_TEXT:0 "[GetGlobalVariable( 'NUI_RL_target' ).GetCharacter.Custom( 'KnightCulturePluralNoTooltip' )]"
+NUI_RL_num_of_knights_TEXT:0 "[Concept( 'knight', GetGlobalVariable( 'NUI_RL_target' ).GetCharacter.Custom( 'KnightCulturePluralNoTooltip' ) )]: [GetGlobalVariable( 'NUI_RL_num_of_characters' ).GetValue|0]"
+NUI_RL_average_prowess_TEXT:0 "[prowess] média: [GetGlobalVariable( 'NUI_RL_average_prowess' ).GetValue|1]"
+
+### 外交一覧 / Diplomatic List ###
+NUI_RL_diplomatic_list_tab_TEXT:0 "Diplomacia"
+NUI_RL_diplomatic_list_note_TT:0 "@warning_icon! #warning Personagens com muitos governantes vizinhos podem desacelerar o jogo (feche a janela e ela voltará ao normal)#!"
+NUI_RL_num_of_rulers_TEXT:0 "[rulers]: [GetGlobalVariable( 'NUI_RL_meets_conditions' ).GetValue|0]/[GetGlobalVariable( 'NUI_RL_num_of_characters' ).GetValue|0]"
+
+NUI_RL_at_war_with_them:0 "Em guerra [Select_CString( ObjectsEqual( Character.Self, GetPlayer ), '', 'com ' )][Select_CString( ObjectsEqual( Character.Self, GetPlayer ), 'você', Character.GetSheHe )]"
+
+ # フィルター / Filters
+ NUI_RL_filter_is_independent_TEXT:0 "Independente"
+ NUI_RL_filter_is_neighboring_TEXT:0 "Vizinho"
+
+ NUI_RL_filter_group_cb_TEXT:0 "[casus_belli]"
+ NUI_RL_filter_cb_they_has_TEXT:0 "[Select_CString( ObjectsEqual( Character.Self, GetPlayer ), 'Você', Character.GetSheHe )|U] [Select_CString( ObjectsEqual( Character.Self, GetPlayer ), 'tem', 'tem' )]"
+ NUI_RL_filter_cb_against_them_TEXT:0 "Contra [Select_CString( ObjectsEqual( Character.Self, GetPlayer ), 'você', Character.GetSheHe )]"
+
+ ### カスタムローカライゼーション / Customizable Localization ###
+ NUI_RL_THEY:0 "[Select_CString( ObjectsEqual( second, GetPlayer ), 'Você', second.GetSheHe )|U]"
+ NUI_RL_THEIR_LIEGE:0 "[Select_CString( ObjectsEqual( second, GetPlayer ), 'Seu', second.GetHerHis )|U] senhor"
+ NUI_RL_THEIR_TOP_LIEGE:0 "[Select_CString( ObjectsEqual( second, GetPlayer ), 'Seu', second.GetHerHis )|U] senhor principal"
+ NUI_RL_INDEPENDENT_RULER:0 "$game_concept_independent_ruler$"
+ NUI_RL_THEIR_NEIGHBOR:0 "[Select_CString( ObjectsEqual( second, GetPlayer ), 'Seu', second.GetHerHis )|U] [Select_CString( Or( ObjectsEqual( second, GetPlayer ), Not( second.IsFemale ) ), 'vizinho', 'vizinha' )]"
+ NUI_RL_VASSAL_IN_REALM:0 "Vassalo em [ROOT.Char.GetLiege.GetPrimaryTitle.GetBaseName]"
+ NUI_RL_THEIR_NEIGHBOR_AND_VASSAL_IN_REALM:0 "[Select_CString( ObjectsEqual( second, GetPlayer ), 'Seu', second.GetHerHis )|U] [Select_CString( Or( ObjectsEqual( second, GetPlayer ), Not( second.IsFemale ) ), 'vizinho', 'vizinha' )] e vassalo em [ROOT.Char.GetLiege.GetPrimaryTitle.GetBaseName]"
+ NUI_RL_THEIR_FELLOW_VASSAL:0 "[Select_CString( ObjectsEqual( second, GetPlayer ), 'Seu', second.GetHerHis )|U] [Select_CString( ROOT.Char.IsFemale, 'companheira vassala', 'companheiro vassalo' )]"
+ NUI_RL_THEIR_NEIGHBOR_AND_FELLOW_VASSAL:0 "[Select_CString( ObjectsEqual( second, GetPlayer ), 'Seu', second.GetHerHis )|U] [Select_CString( Or( ObjectsEqual( second, GetPlayer ), Not( second.IsFemale ) ), 'vizinho', 'vizinha' )] e [Select_CString( ROOT.Char.IsFemale, 'companheira vassala', 'companheiro vassalo' )]"
+
+ NUI_RL_CB_THEY_HAS:0 "#high [Select_CString( ObjectsEqual( second, GetPlayer ), 'Você', second.GetSheHe )|U]#! tem [casus_belli|E] que pode ser usado contra #high [Character.GetShortUIName]#!"
+ NUI_RL_CB_AGAINST_THEM:0 "#high [Character.GetShortUIName]#! tem [casus_belli|E] que pode ser usado contra #high [Select_CString( ObjectsEqual( second, GetPlayer ), 'você', second.GetSheHe )]#!"
+ NUI_RL_BOTH_SIDE_HAVE_CB:0 "$NUI_RL_CB_THEY_HAS$\n$NUI_RL_CB_AGAINST_THEM$"
+
+ NUI_RL_CLAIM_THEY_HAS:0 "#high [Select_CString( ObjectsEqual( second, GetPlayer ), 'Você', second.GetSheHe )|U]#! tem [claim|E] que pode ser usado contra #high [Character.GetShortUIName]#!"
+ NUI_RL_CLAIM_AGAINST_THEM:0 "#high [Character.GetShortUIName]#! tem [claim|E] que pode ser usado contra #high [Select_CString( ObjectsEqual( second, GetPlayer ), 'você', second.GetSheHe )]#!"
+ NUI_RL_BOTH_SIDE_HAVE_CLAIM:0 "$NUI_RL_CLAIM_THEY_HAS$\n$NUI_RL_CLAIM_AGAINST_THEM$"
+
+ NUI_RL_DE_JURE_CLAIM_THEY_HAS:0 "#high [Select_CString( ObjectsEqual( second, GetPlayer ), 'Você', second.GetSheHe )|U]#! tem [claim|E] [de_jure|E] que pode ser usado contra #high [Character.GetShortUIName]#!"
+ NUI_RL_DE_JURE_CLAIM_AGAINST_THEM:0 "#high [Character.GetShortUIName]#! tem [claim|E] [de_jure|E] que pode ser usado contra #high [Select_CString( ObjectsEqual( second, GetPlayer ), 'você', second.GetSheHe )]#!"
+ NUI_RL_BOTH_SIDE_HAVE_DE_JURE_CLAIM:0 "$NUI_RL_DE_JURE_CLAIM_THEY_HAS$\n$NUI_RL_DE_JURE_CLAIM_AGAINST_THEM$"
